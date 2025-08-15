@@ -20,5 +20,86 @@
         <button class="search-btn"><i class="fas fa-search"></i></button>
       </div>
     </header>
+    <section class="main-content">
+      <div class="weather-today">
+        <div class="location-info">
+          <div class="location">London</div>
+          <div class="current-date">2025-08-15</div>
+        </div>
+        <div class="weather-data">
+          <div class="temperature">31&deg;C</div>
+          <div class="min-max-temp">L: 27&deg;C | H: 34&deg;C</div>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="descriptions">
+          "Similar temperatures continuing with a chance of rain multiple days."
+        </div>
+        <div class="feels-like">
+          Feels Like: <span class="feels-like-data">40&deg;C</span>
+        </div>
+        <div class="humidity">
+          Humidity: <span class="humidity-data">68.4%</span>
+        </div>
+        <div class="rain-prob">
+          Chances of Rain: <span class="rain-prob-data">0%</span>
+        </div>
+        <div class="wind-speed">
+          Wind: <span class="wind-speed-data">20.9</span>
+        </div>
+        <div class="uv-index">
+          UV Index: <span class="uv-index-data">6</span>
+        </div>
+      </div>
+      <div class="five-day-forecast">
+        <div class="title">5-Day Forecast</div>
+        <div class="forecast-container">
+          <div class="day-2">
+            <div class="weekday">Saturday</div>
+            <img src="assets/sun.png" alt="clear" class="day-2-icon" />
+            <div class="day-2-condition">Clear</div>
+            <div class="temp-range">19&deg;C - 29&deg;C</div>
+            <input type="range" min="19" max="29" value="25" disabled />
+          </div>
+          <div class="day-3">
+            <div class="weekday">Saturday</div>
+            <img src="assets/sun.png" alt="clear" class="day-2-icon" />
+            <div class="day-2-condition">Clear</div>
+            <div class="temp-range">19&deg;C - 29&deg;C</div>
+            <input type="range" min="19" max="29" value="25" disabled />
+          </div>
+          <div class="day-4">
+            <div class="weekday">Saturday</div>
+            <img src="assets/sun.png" alt="clear" class="day-2-icon" />
+            <div class="day-2-condition">Clear</div>
+            <div class="temp-range">19&deg;C - 29&deg;C</div>
+            <input type="range" min="19" max="29" value="25" disabled />
+          </div>
+          <div class="day-5">
+            <div class="weekday">Saturday</div>
+            <img src="assets/sun.png" alt="clear" class="day-2-icon" />
+            <div class="day-2-condition">Clear</div>
+            <div class="day-2-temp">
+              <div class="temp-range">19&deg;C - 29&deg;C</div>
+              <input type="range" min="19" max="29" value="25" disabled />
+            </div>
+          </div>
+          <div class="day-6">
+            <div class="weekday">Saturday</div>
+            <img src="assets/sun.png" alt="clear" class="day-2-icon" />
+            <div class="day-2-condition">Clear</div>
+            <div class="temp-range">19&deg;C - 29&deg;C</div>
+            <input
+              id="temp-range-input"
+              type="range"
+              min="19"
+              max="29"
+              value="25"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
