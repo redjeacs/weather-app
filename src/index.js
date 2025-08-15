@@ -1,3 +1,6 @@
 import './styles.css';
+import { getWeather } from './modules/api';
+import initSearchBar from './modules/location';
 
-console.log('hello');
+document.addEventListener('DOMContentLoaded', initSearchBar);
+getWeather();
