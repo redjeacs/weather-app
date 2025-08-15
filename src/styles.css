@@ -5,4 +5,60 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+  background-image: url(assets/night-sky.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  gap: clamp(10px, 20px, 30%);
+  padding: 0 5px;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.logo-section,
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  position: relative;
+  width: clamp(100px, 80%, 500px);
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
