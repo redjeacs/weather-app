@@ -7,7 +7,7 @@ async function getWeather(location = 'taipei') {
       throw new Error('Location not found');
     }
     const data = await response.json();
-    console.log(data);
+    return data;
   } catch (err) {
     console.log(err);
   }

@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
   font-family: Helvetica, sans-serif;
   background-image: url(assets/night-sky.jpg);
@@ -88,7 +88,10 @@ header {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid black;
-  background-color: black;
+  background-image: url(assets/forecast-background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .location-info {
@@ -136,16 +139,24 @@ header {
 
 .forecast-container {
   display: flex;
-  align-items: center;
-  height: 100%;
+  margin-top: 10px;
+  align-items: top;
+  gap: 10px;
+  height: 80%;
 }
 
-.day-2-icon {
-  width: 80%;
+.icon {
+  width: 60%;
   height: auto;
+  margin: 5px 0;
 }
 
 .forecast-container > div {
+  min-width: 0;
+  font-size: clamp(10px, 50%, 15px);
+  white-space: normal;
+  background-color: rgba(0, 0, 54, 0.5);
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,4 +170,16 @@ header {
 
 input[type='range'] {
   width: 80%;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .weather-today {
+    grid-area: auto;
+    padding: 20px;
+  }
 }
